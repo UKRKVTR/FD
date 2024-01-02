@@ -1,1 +1,1 @@
-# [delivery](https://ukrkvtr.github.io/FoodDelivery_2/)
+<!-- # [delivery](https://ukrkvtr.github.io/FoodDelivery_2/) -->

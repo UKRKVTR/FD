@@ -1,0 +1,62 @@
+[
+  {
+    "id": "pp00",
+    "name": "Піца Плюс",
+    "time_of_delivery": 50,
+    "stars": 4.5,
+    "price": 900,
+    "kitchen": "Піцца",
+    "image": "img/pizza-plus/preview.jpg",
+    "products": "pizza-plus.json"
+  },
+  {
+		"id": "th00",
+		"name": "Тануки",
+		"time_of_delivery": 60,
+		"stars": 4.3,
+		"price": 1200,
+		"kitchen": "Суші, роли",
+		"image": "img/tanuki/preview.jpg",
+		"products": "tanuki.json"
+	},
+  {
+		"id": "fb00",
+		"name": "Фуд Бенд",
+		"time_of_delivery": 40,
+		"stars": 4.4,
+		"price": 450,
+		"kitchen": "Піцца",
+		"image": "img/food-band/preview.jpg",
+		"products": "food-band.json"
+	},
+  {
+		"id": "ps00",
+		"name": "Палички Скалки",
+		"time_of_delivery": 55,
+		"stars": 4.1,
+		"price": 500,
+		"kitchen": "Піцца",
+		"image": "img/palki-skalki/preview.jpg",
+		"products": "palki-skalki.json"
+	},
+  {
+		"id": "gl00",
+		"name": "Гуси Лебеді",
+		"time_of_delivery": 75,
+		"stars": 4.7,
+		"price": 1000,
+		"kitchen": "Російська кухня",
+		"image": "img/gusi-lebedi/preview.jpg",
+		"products": "gusi-lebedi.json"
+	},
+  {
+		"id": "pb00",
+		"name": "Піца-Бургер",
+		"time_of_delivery": 45,
+		"stars": 4.6,
+		"price": 700,
+		"kitchen": "Піцца",
+		"image": "img/pizza-burger/preview.jpg",
+		"products": "pizza-burger.json"
+	}
+]

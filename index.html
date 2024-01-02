@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Доставка їжі на дім - Delivery Food</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js" defer type="module"></script>
+    <script src="js/disableScroll.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.svg" alt="logo" class="logo" />
+            <input type="text" class="input input-address" placeholder="Адреса доставки" />
+            <div class="buttons">
+                <span class="user-name"></span>
+                <button class="button button-primary button-auth">
+                    <img src="img/icon_button1.svg" alt="Користувач" /><span class="button-text">Увійти</span>
+                </button>
+                <button class="button" id="shoping-button">
+                    <img src="img/icon_button2.svg" alt="Корзина" /><span class="button-text">Корзина</span>
+                </button>
+                <button class="button button-primary button-out">
+                    <span class="button-text">Вийти</span>
+                    <span class="button-out-svg"></span>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main class="main">
+        <div class="container">
+            <div class="swiper">
+                <section class="swiper-wrapper">
+                    <section class="shower shower-pizza swiper-slide">
+                        <h1 class="swover-title">
+                            Онлайн-сервіс <br />
+                            доставки їжі на дім
+                        </h1>
+                        <p class="shower-text">
+                            Страви з улюбленого ресторану привезе кур'єр у рукавичках, масці та з антисептиком
+                        </p>
+                    </section>
+                    <section class="shower shower-kebab swiper-slide">
+                        <h1 class="swover-title">
+                            Шашлики на травневі <br />
+                            зі знижкою 35%
+                        </h1>
+                        <p class="shower-text">
+                            Замовте шашлики у будь-якому ресторані до 10 травня і отримайте знижку за промокодом OMAGAD
+                        </p>
+                    </section>
+                    <section class="shower shower-vegetables swiper-slide">
+                        <h1 class="shower-title">
+                            Знижка 20% на всю їжу <br />
+                            за промокодом LOVE.JS
+                        </h1>
+                        <p class="shower-text">
+                            Страву з ресторану привезуть разом із двома подарунковими книгами з фронтенду
+                        </p>
+                    </section>
+                    <section class="shower shower-sushi swiper-slide">
+                        <h1 class="shower-title">
+                            Сети зі знижкою до 30% <br />
+                            у ресторанах
+                        </h1>
+                        <p class="shower-text">
+                            Знижки на сети до 30 травня за промокодом DADADA
+                        </p>
+                    </section>
+                </section>
+            </div>
+
+            <section class="restaurants">
+                <div class="section-heading">
+                    <h2 class="section-title" id="Title-menu">Ресторани</h2>
+                    <input type="text" class="input input-search" placeholder="Пошук страв і ресторанів" />
+                </div>
+                <div id="header-restaurant"></div>
+                <button class="button button-primary button-auth hide button-to-back" id="button-back-to-all-list">
+                    Повернутися
+                </button>
+                <div class="cards-goods"></div>
+                <div class="cards"></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <img src="img/logo.svg" alt="Логотип" class="logo footer-logo" />
+                <nav class="footer-nav">
+                    <a href="#" class="footer-link">Ресторанам</a>
+                    <a href="#" class="footer-link">Кур'єрам</a>
+                    <a href="#" class="footer-link">Прес-центр</a>
+                    <a href="#" class="footer-link">Контакти</a>
+                </nav>
+                <div class="social-links">
+                    <a href="#" class="social-link"><img src="img/inst.svg" alt="Instagram" /></a>
+                    <a href="#" class="social-link"><img src="img/facebook.svg" alt="Facebook" /></a>
+                    <a href="#" class="social-link"><img src="img/vk.svg" alt="VK" /></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal">
+        <div class="modal-dialog wow fadeInUp" data-wow-delay="0.2s">
+            <div class="modal-header">
+                <h3 class="modal-title">Кошик</h3>
+                <button class="button-close">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <div class="food-row">
+                    <span class="food-name">Шаурма: Гавайська</span>
+                    <strong class="food-price">150₴</strong>
+                    <div class="food-counter">
+                        <button class="button-counter">-</button>
+                        <span class="counter">1</span>
+                        <button class="button-counter">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Шаурма: Гавайська</span>
+                    <strong class="food-price">150₴</strong>
+                    <div class="food-counter">
+                        <button class="button-counter button-counter-plus">-</button>
+                        <span class="counter">1</span>
+                        <button class="button-counter button-counter-minus">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Шаурма: Гавайська</span>
+                    <strong class="food-price">150₴</strong>
+                    <div class="food-counter">
+                        <button class="button-counter">-</button>
+                        <span class="counter">1</span>
+                        <button class="button-counter">+</button>
+                    </div>
+                </div>
+                <div class="food-row">
+                    <span class="food-name">Шаурма: Гавайська</span>
+                    <strong class="food-price">150₴</strong>
+                    <div class="food-counter">
+                        <button class="button-counter">-</button>
+                        <span class="counter">1</span>
+                        <button class="button-counter">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <span class="footer-price">600₴</span>
+                <div class="footer-buttons">
+                    <button class="button button-primary">Оформити замовлення</button>
+                    <button class="button button-clear-cart">Відміна</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-auth">
+        <div class="modal-dialog modal-dialog-auth">
+            <button class="close-auth">&times;</button>
+
+            <form id="logInform">
+                <fieldset class="modal-body">
+                    <legend class="modal-title">Авторизація</legend>
+                    <label class="label-auth">
+                        <span>Логін</span>
+                        <input id="login" type="text" />
+                    </label>
+                    <label class="label-auth">
+                        <span>Пароль</span>
+                        <input id="password" type="password" />
+                    </label>
+                </fieldset>
+                <div class="modal-footer">
+                    <div class="footer-buttons">
+                        <button class="button button-primary button-login" type="submit">
+                            Увійти
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
